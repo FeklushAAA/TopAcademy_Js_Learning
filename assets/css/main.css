@@ -48,7 +48,23 @@ img{
     background-color: var(--accent-color) !important;
 }
 
+.btn-warning{
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
 
+.btn-outline-warning{
+    border-color: var(--accent-color);
+}
+
+.btn-outline-warning:hover{
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+
+
+/*=================================  общие правила ==============================*/
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -59,6 +75,33 @@ main.main { /*обращаемся к тегу main с классом main */
     flex: 1 1 auto; /*параметры данного стиля это сокращеные от flex-grow, flex-shrink и flex-basis. Первая 1 - даем нашему элементу все 100% предоставляемого пространства для контента,
 						вторая единичка определяет фактор сжатия элемента, свойство авто - размер по основной оси, ось у нас вертикальная, так как для wrapper мы задали column*/
 }
+
+section {
+    padding: 50px 0;
+}
+
+.section-title {
+    position: relative;
+    text-transform: uppercase;
+    color: var(--contrast-color);
+    font-weight: 700;
+}
+
+.section-title span {
+    background-color: var(--bg-color);
+    padding-right: 1rem;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed var(--text-color);
+    z-index: -1;
+}
+
 /*=================================  общие правила ==============================*/
 
 /*=================================  Правила для Header ==============================*/
@@ -128,4 +171,81 @@ ul.social-icons a:hover{
     border: 1px  solid var(--contrast-color);
 }
 
+.header-bottom{
+    border-top: 3px solid var(--accent-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.header-bottom .navbar,
+.header-bottom .navbar .dropdown-menu{
+    background-color: var(--contrast-color) !important;
+}
+
+.header-bottom .nav-item:first-child .nav-link {
+    padding-left: 0;
+}
+
+.header-bottom .navbar .nav-link{
+    color: #fff;
+    transition: .3s all;
+    letter-spacing:  .1rem;
+}
+
+.header-bottom .navbar .nav-link:hover {
+    color: var(--accent-color);
+}
+
+.header-bottom .navbar .nav-link.active {
+    color: var(--accent-color);
+}
+
+.header-bottom .navbar .dropdown-menu {
+    margin-top: 7px;
+}
 /*=================================  Правила для Header ==============================*/
+
+/* ============================= Main ============================ */
+
+
+/* ============================= Carousel ============================ */
+.carousel-caption {
+    text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+/* ============================= Carousel ============================ */
+
+
+/* ============================= Advantages ============================ */
+
+.advantages .items {
+    margin-top: 50px;
+}
+
+.advantages .items .item {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all .3s;
+}
+
+.advantages .items .item:hover {
+    box-shadow: 0 15px 30px -20px rgba(0, 0, 0, .5);
+}
+
+.advantages i {
+    font-size: 70px;
+    color: var(--accent-color);
+}
+
+/* ============================= Advantages ============================ */
+
+
+
+/* ============================= Main ============================ */
