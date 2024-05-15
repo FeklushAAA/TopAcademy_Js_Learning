@@ -26,6 +26,9 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 	<!-- Подключаем наш файл для кастомного стиля СТРОГО ниже подключения бустрапа -->
 	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"> <!-- Подключение фавиконки -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -166,7 +169,7 @@
 		</header>
 
 		<!--header-bottom-->
-		<div class="header-bottom sticky-top">
+		<div class="header-bottom sticky-top" id="header-nav">
 			<!--Из документации бустрапа копируем первый navbar из раздела navbar-->
 			<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
 				<!--Меняем цветовую схему навбара, можно найти в документации-->
@@ -240,6 +243,8 @@
 			</nav>
 		</div><!--/header-bottom-->
 
+
+		<!--Главная карусель с рекламными баннерами или любым контентом по желанию-->
 		<main class="main">
 			<div id="carousel" class="carousel slide">
 				<div class="carousel-indicators">
@@ -297,6 +302,12 @@
 				</button>
 			</div>
 
+			<!--Конец клавной карусели-->
+
+
+
+			<!--Блок с преимуществами сайта, в теге section-->
+
 			<section class="advantages">
 				<div class="container-fluid">
 					<div class="row mb-5">
@@ -346,16 +357,485 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
 
 
-					<!--Карточки-->
+			<!--Карточки -->
+
+			<section class="featured-products">
+				<div class="container-fluid">
+					<div class="row mb-5">
+						<div class="col-12">
+							<h2 class="section-title">
+								<span>Рекомендуемые товары</span>
+							</h2>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="assets/img/carts/1.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 1 Lorem ipsum dolor, sit amet consectetur
+											adipisicing.</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Placeat, aperiam!</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="assets/img/carts/2.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 2</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<!-- <div class="offer-hit">Hit</div>
+											<div class="offer-new">New</div> -->
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="assets/img/carts/3.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 3 Lorem ipsum</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											$100
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="assets/img/carts/4.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 4</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="assets/img/carts/5.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 5 Lorem ipsum dolor, sit amet consectetur
+											adipisicing.</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Placeat, aperiam!</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="assets/img/carts/6.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 6</a>
+									</h4>
+									<p class="product-excerpt"></p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="assets/img/carts/7.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 7</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Placeat, aperiam!</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="assets/img/carts/8.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 8 Lorem</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
 
 
+			<!--Карусель с новыми продуктами-->
+			<section class="new-products">
+				<div class="container-fluid">
+					<div class="row mb-5">
+						<div class="col-12">
+							<h2 class="section-title">
+								<span>Новинки</span>
+							</h2>
+						</div>
+					</div>
+
+					<div class="owl-carousel owl-theme owl-carousel-full">
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="assets/img/carts/1.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 1 Lorem ipsum dolor, sit amet consectetur
+										adipisicing.</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Placeat, aperiam!</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="assets/img/carts/2.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 2</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<!-- <div class="offer-hit">Hit</div>
+										<div class="offer-new">New</div> -->
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="assets/img/carts/3.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 3 Lorem ipsum</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										$100
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="assets/img/carts/4.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 4</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="assets/img/carts/5.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 5 Lorem ipsum dolor, sit amet consectetur
+										adipisicing.</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Placeat, aperiam!</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="assets/img/carts/6.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 6</a>
+								</h4>
+								<p class="product-excerpt"></p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="assets/img/carts/7.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 7</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Placeat, aperiam!</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="assets/img/carts/8.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 8 Lorem</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</div>
 			</section>
 		</main>
-	</div>
+	</div> <!--/.wrapper-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="assets/owlcarousel/owl.carousel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
